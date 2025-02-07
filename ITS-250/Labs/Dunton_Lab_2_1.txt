@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Lab2_1 {
+    public static void main(String[] args) {
+        // Ask user for weight and height ...
+    
+        Scanner input = new Scanner(System.in);
+            System.out.print("Enter weight in pounds: ");
+            double weight = input.nextDouble();
+            System.out.print("Enter height in inches: ");
+            double height = input.nextDouble();
+
+            // Convert imperial units to metric ...
+            double metricWeight = weight * .45359237;
+            double metricHeight = height * .0254;
+
+            // Take metric measurments and calculate user BMI ...
+            double bmi = metricWeight / (metricHeight * metricHeight);
+
+            // Display User BMI on terminal ...
+            System.out.print("BMI is " + bmi);
+
+    }
+}
