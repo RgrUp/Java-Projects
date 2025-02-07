@@ -1,0 +1,14 @@
+ITS 250 Lab 5.1
+
+*5.16 In your book
+
+(Find the factors of an integer) Write a program that reads an integer and displays all its smallest factors
+in increasing order. For example, if the input integer is 120, the output should be as follows: 2, 2, 2, 3, 5.
+
+1. All programs must be well documented (name, data, description of program, other comments of
+what the program is doing)
+
+2. Source code must be turned in (pasted in a text file or word document) to be compiled by the
+Instructor.
+
+3. Include a screen shot of the working program.
