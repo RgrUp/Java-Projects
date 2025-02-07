@@ -59,5 +59,7 @@ public class FindFactors {
             else
                 System.out.print("13.");
         }
+        if (Test1 > 1)
+            System.out.print(" " + Test1 + ".");
     }
 }
