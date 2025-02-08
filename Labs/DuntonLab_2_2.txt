@@ -1,0 +1,33 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class DuntonLab2_2 {
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+
+        // Cost of Driving program. Program prompts user to enter information to calculate the Cost of Driving ...
+        System.out.print("Enter the driving distance: ");
+            float distance = input.nextFloat();
+            System.out.print("Enter mile per gallon: ");
+            float mpg = input.nextFloat();
+            System.out.print("Enter the price per gallon: ");
+            float pricePergallon = input.nextFloat();
+
+            // Calculate total gallons needed for the tirp ...
+            float gallonsNeeded = distance / mpg;
+
+            // Calculate the cost of driving per user inputs ...
+            
+            float cost = gallonsNeeded * pricePergallon;
+
+             // Format to 2 decimal places
+            DecimalFormat df = new DecimalFormat("#.##");
+            
+             // formattedNumber will be "#.##"
+            String formattedNumber = df.format(cost);
+
+            // Display User BMI on terminal ...
+            System.out.print("The cost of driving is $" + formattedNumber);
+    }
+}
